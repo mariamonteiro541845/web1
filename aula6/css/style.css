@@ -1,0 +1,123 @@
+header{
+    color: orange;
+    text-align: center;
+ font-size: 200px;
+}
+
+nav{
+
+    color: blueviolet;
+    text-align: var(pink) ;
+}
+
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container do Formulário */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Estilização dos Labels e Textos */
+label, span {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilo para Inputs de Texto, Número e Data */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho final */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilização para Checkbox e Radio (ajuste de alinhamento) */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Organizando os grupos de Checkbox/Radio para não ficarem colados */
+form label[for^="turno"], 
+form label[for^="viagem"] {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    width: 68%;
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+    width: 28%;
+    float: right;
+}
+
+input[type="submit"]:hover { background-color: #45a049; }
+input[type="reset"]:hover { background-color: #c0392b; }
+
+input[type="submit"]:active, 
+input[type="reset"]:active {
+    transform: scale(0.98);
+}
+
+/* Link de voltar */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
